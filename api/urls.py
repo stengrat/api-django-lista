@@ -23,5 +23,5 @@ api_routers.register(r'produtos', ProdutoViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include(api_routers.urls))
+    path('api/v1/', include('produtos.urls')),
 ]
